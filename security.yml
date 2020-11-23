@@ -1,0 +1,6 @@
+user: 
+  id: 111
+  role: 
+    - sec-admin
+    - moderator
+  password: secondary-password

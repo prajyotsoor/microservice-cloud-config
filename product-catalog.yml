@@ -1,0 +1,21 @@
+server:
+  contextPath: /api/dev
+  port: 8080
+spring:
+  profiles: dev
+  application:
+    name: shipping-service-client
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: nexstore
+      repositories:
+        enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+environment: dev
